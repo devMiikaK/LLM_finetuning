@@ -13,13 +13,16 @@ Jupyter notebook Mistral7b mallin hienosäätöön DPO-koulutuksella. Tämän hi
 
 ### Loss
 ![Loss](./graphs/loss.png)
+
 Loss alkoi aika korkealta (~0.65) ensimmäisen 30 askeleen kohdalla, jonka jälkeen se tasoittui lähemmäksi nollaa.
 
 ### Chosen
 ![Chosen](./graphs/rewards-chosen.png)
+
 Tästä nähdään, että kielimalli generoi jatkuvasti datasetin mukaan "valittuja" vastauksia.
 
 ### Rejected
 ![Rejected](./graphs/rewards-rejected.png)
+
 Lopuksi näemme tästä graafista, että "hylättyjä" vastauksia rangaistaan enemmän, ja kielimalli ei valitse näitä. Voimme päätellä tästä, että DPO-koulutus onnistui.
 
